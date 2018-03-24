@@ -7,6 +7,12 @@ router.get('/', function(req, res){
   });
 });
 
+router.get('/results', function(req, res){
+  res.render('results', {
+    title: 'Results'
+  });
+});
+
 router.get('/about', function(req, res){
   res.render('about', {
     title: 'About'

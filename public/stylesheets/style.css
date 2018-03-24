@@ -1,10 +1,25 @@
-body {
+#body1 {
+  padding: 50px;
+  font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("https://i.imgur.com/XPsIL7a.jpg");
+}
+#body2 {
+  padding: 50px;
+  font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("https://i.imgur.com/XPsIL7a.jpg");
+}
+#body3 {
+  padding: 50px;
+  font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("https://i.imgur.com/XPsIL7a.jpg");
+}
+#body4 {
   padding: 50px;
   font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
   background: url("https://i.imgur.com/XPsIL7a.jpg");
 }
 a {
-  color: #00b7ff;
+  color: #310870;
 }
 #wrapper {
   width: 920px;
@@ -16,6 +31,7 @@ a {
   color: #ffa500;
   font: 25px;
 }
-#navbar{
-  background-color: red;
+#navbar {
+  background-color: #d538e0;
+  margin-top: -3%;
 }
