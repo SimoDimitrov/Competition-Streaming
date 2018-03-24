@@ -1,7 +1,21 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 30px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url("https://i.imgur.com/XPsIL7a.jpg");
 }
 a {
   color: #00b7ff;
+}
+#wrapper {
+  width: 920px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  padding: 20px;
+  color: #ffa500;
+  font: 25px;
+}
+#navbar{
+  background-color: red;
 }
