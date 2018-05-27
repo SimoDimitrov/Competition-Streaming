@@ -7,11 +7,18 @@ router.get('/', function(req, res){
   });
 });
 
-router.get('/results', function(req, res){
+router.get('/results',ensureAuthenticated, function(req, res){
   res.render('results', {
     title: 'Results'
   });
 });
+
+function ensureAuthenticated(req, res, next){
+	if(req.isAuthenticated()){
+		return next();
+	}
+	res.redirect('/users/login');
+}
 
 router.get('/about', function(req, res){
   res.render('about', {

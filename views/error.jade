@@ -1,6 +1,44 @@
-extends layout
+doctype
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
 
-block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  body#body3
+    header
+    img#logo(src='https://i.imgur.com/nc6CypP.png')
+    button.button.button1(onclick="location.href='/';") Home
+    button.button.button1(onclick="location.href='/results';") Results
+    button.button.button1(onclick="location.href='/about';") About
+    button.button.button1(onclick="location.href='/contact';") Contact
+         
+    section
+    
+      h1= message
+      h2= error.status
+      pre #{error.stack}
+    
+    <br>
+    a(href='', style='text-decoration: none', target='_blank')
+      font(color='white')
+        font(size='6')
+          b Advertising
+    | &nbsp
+    | |&nbsp 
+    a(href='', style='text-decoration: none', target='_blank')
+      font(color='white')
+        b Terms and Conditions
+    | &nbsp 
+    | |&nbsp 
+    a(href='', style='text-decoration: none', target='_blank')
+      font(color='white')
+        b FAQ
+    | &nbsp 
+    | |&nbsp 
+    a(href='', style='text-decoration: none', target='_blank')
+      font(color='white')
+        b Get a job
+    a(style='text-decoration: none', target='_blank')
+      font(color='white')
+        <br><br>
+        Copyright © 2018 Simo Dimitrov inc.™ All rights reserved!          

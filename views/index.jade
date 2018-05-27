@@ -1,5 +1,108 @@
-extends layout
+doctype
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='./javascripts/script.js')
 
-block content
-  h1= title
-  p Welcome to #{title}
+  body#body1
+    header
+    img#logo(src='https://i.imgur.com/nc6CypP.png')
+    button.button.button1() Home
+    button.button.button1(onclick="location.href='/results';") Results
+    button.button.button1(onclick="location.href='/about';") About
+    button.button.button1(onclick="location.href='/contact';") Contact
+    if !user
+             li.account1(class=(title == 'Register' ? 'active' : ''))
+               a.acc(href='/users/register') Register
+             li.account2(class=(title == 'Login' ? 'active' : ''))
+               a.acc(href='/users/login') Login
+          ul
+           if user
+            li.account1
+               a(href='/users/logout') Logout
+    section
+          p(align='center')
+            img(src='https://i.imgur.com/g2nKRTB.png')
+    
+    button.competitions.one(onclick='cameras1()') Футбол
+    button.competitions(onclick='cameras2()') Автомобили
+    button.competitions(onclick='cameras3()') Колоездене
+    button.competitions(onclick='cameras4()') Конни надбягвания
+    p#boxes1(style='display:none')
+      input#box1(type='checkbox', onclick='myFunction1()')
+      | Камера 1
+      input#box2(type='checkbox', onclick='myFunction1()')
+      | Камера 2
+      input#box3(type='checkbox', onclick='myFunction1()')
+      | Камера 3
+      input#box4(type='checkbox', onclick='myFunction1()')
+      | Камера 4
+    p#boxes2(style='display:none')
+      input#box5(type='checkbox', onclick='myFunction2()')
+      | Камера 1
+      input#box6(type='checkbox', onclick='myFunction2()')
+      | Камера 2
+      input#box7(type='checkbox', onclick='myFunction2()')
+      | Камера 3
+      input#box8(type='checkbox', onclick='myFunction2()')
+      | Камера 4
+    p#boxes3(style='display:none')
+      input#box9(type='checkbox', onclick='myFunction3()')
+      | Камера 1
+      input#box10(type='checkbox', onclick='myFunction3()')
+      | Камера 2
+      input#box11(type='checkbox', onclick='myFunction3()')
+      | Камера 3
+      input#box12(type='checkbox', onclick='myFunction3()')
+      | Камера 4
+    p#boxes4(style='display:none')
+      input#box13(type='checkbox', onclick='myFunction4()')
+      | Камера 1
+      input#box14(type='checkbox', onclick='myFunction4()')
+      | Камера 2
+      input#box15(type='checkbox', onclick='myFunction4()')
+      | Камера 3
+      input#box16(type='checkbox', onclick='myFunction4()')
+      | Камера 4
+    iframe#video1(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/live_stream?channel=UCnQOZWj6WQQu868DUmw8iVw')
+    iframe#video2(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/Gq-oBWmvIMM')
+    iframe#video3(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/NuG1ci3CNUc')
+    iframe#video4(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/q4UPf_P7gRw')
+    iframe#video5(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/t-Z5FtPFzVk')
+    iframe#video6(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/aJ7N9sOpeoo')
+    iframe#video7(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/kzjPJe_5JfU')
+    iframe#video8(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/b-Qj6BzIi9o')
+    iframe#video9(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/2L8lZq9UepM')
+    iframe#video10(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/u7QFBzA4RLE')
+    iframe#video11(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/jHrbWbA0IkI')
+    iframe#video12(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/7lbBwE-Gh4g')
+    iframe#video13(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/1fMZQ6vMMx0')
+    iframe#video14(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/n8QIwrw_63c')
+    iframe#video15(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/ekEdgE61K74')
+    iframe#video16(style='display:none', width='720', height='480', src='https://www.youtube.com/embed/xjrxSbK24VI')
+
+    <br><br><br><br>
+    a(href='', style='text-decoration: none', target='_blank')
+      font(color='white')
+        font(size='6')
+          b Advertising
+    | &nbsp
+    | |&nbsp 
+    a(href='', style='text-decoration: none', target='_blank')
+      font(color='white')
+        b Terms and Conditions
+    | &nbsp 
+    | |&nbsp 
+    a(href='', style='text-decoration: none', target='_blank')
+      font(color='white')
+        b FAQ
+    | &nbsp 
+    | |&nbsp 
+    a(href='', style='text-decoration: none', target='_blank')
+      font(color='white')
+        b Get a job
+    a(style='text-decoration: none', target='_blank')
+      font(color='white')
+        <br><br>
+        Copyright © 2018 Simo Dimitrov inc.™ All rights reserved!

@@ -23,6 +23,9 @@
   background: url("https://i.imgur.com/gZi9Ko2.jpg");
   color: #000;
 }
+#body5 {
+  background: url("https://i.imgur.com/l22GA17.jpg");
+}
 a {
   color: #310870;
 }
@@ -152,4 +155,47 @@ h1 {
   font-weight: bold;
   color: #fff;
   background-color: #353a37;
+}
+.account1 {
+  display: inline;
+  font-weight: bold;
+  margin-left: 40%;
+  background-color: #fff;
+  padding: 1%;
+  border-radius: 10px;
+}
+.account1:hover {
+  display: inline;
+  font-weight: bold;
+  margin-left: 40%;
+  background-color: #00f;
+  padding: 1%;
+}
+.account2 {
+  display: inline;
+  font-weight: bold;
+  margin-left: 3%;
+  background-color: #fff;
+  padding: 1%;
+  border-radius: 10px;
+}
+.account2:hover {
+  display: inline;
+  font-weight: bold;
+  margin-left: 3%;
+  background-color: #00f;
+  padding: 1%;
+}
+.acc {
+  color: #00f;
+}
+.acc:hover {
+  color: #fff;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
 }
