@@ -12,4 +12,10 @@ Node.js, CSS, Javascript
 -----------------------------------------
 Github, Git Bash, Windows, Ubuntu, Heroku
 
+Линкове:
+-----------------------------------------
 Линк към Heroku: https://competitionstreaming.herokuapp.com/
+
+Видео към проекта: https://www.youtube.com/watch?v=S4pgSbgDpMo
+
+Видео към проекта - съкратена версия: https://www.youtube.com/watch?v=Hq-jGuetnt8
